@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS assignments CASCADE;
+
+DROP TABLE IF EXISTS projects CASCADE;
+
+DROP TABLE IF EXISTS employees CASCADE;
+
+DROP SEQUENCE IF EXISTS employees_employee_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS projects_project_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS assignments_assignment_id_seq CASCADE;
