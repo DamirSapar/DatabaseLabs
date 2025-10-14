@@ -157,7 +157,7 @@ CREATE TABLE departments(
     dept_name TEXT NOT NULL ,
     location TEXT
 );
---  Valid inserts (всё корректно)
+--  Valid inserts 
 INSERT INTO departments VALUES (1, 'Human Resources', 'Astana');
 INSERT INTO departments VALUES (2, 'Finance', 'Almaty');
 INSERT INTO departments VALUES (3, 'IT', 'Shymkent');
