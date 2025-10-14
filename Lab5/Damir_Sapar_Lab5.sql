@@ -83,7 +83,7 @@ CREATE TABLE inventory(
 --Task 2.3
 --  Valid inserts (всё корректно)
 INSERT INTO customers VALUES (1, 'john@example.com', '1234567890', '2025-10-10');
-INSERT INTO customers VALUES (2, 'anna@example.com', NULL, '2025-10-11');  -- phone может быть NULL
+INSERT INTO customers VALUES (2, 'anna@example.com', NULL, '2025-10-11');  
 
 --  Invalid: violates NOT NULL on email
 -- INSERT INTO customers VALUES (3, NULL, '9999999999', '2025-10-12');
@@ -145,7 +145,7 @@ INSERT INTO users VALUES (2, 'alice', 'alice@example.com', DEFAULT);
 --  Valid course enrollments
 INSERT INTO course_enrollments VALUES (1, 101, 'CS101', 'Fall 2025');
 INSERT INTO course_enrollments VALUES (2, 102, 'CS101', 'Fall 2025');
-INSERT INTO course_enrollments VALUES (3, 101, 'CS102', 'Fall 2025'); -- тот же студент, но другой курс
+INSERT INTO course_enrollments VALUES (3, 101, 'CS102', 'Fall 2025'); 
 
 --  Invalid: violates UNIQUE (student_id, course_code, semester)
 -- INSERT INTO course_enrollments VALUES (4, 101, 'CS101', 'Fall 2025');
@@ -284,9 +284,9 @@ INSERT INTO orders VALUES (1, '2025-10-10');
 INSERT INTO orders VALUES (2, '2025-10-11');
 
 -- Элементы заказов
-INSERT INTO order_items VALUES (1, 1, 1, 2);  -- 2 ноутбука
-INSERT INTO order_items VALUES (2, 1, 2, 3);  -- 3 футболки
-INSERT INTO order_items VALUES (3, 2, 1, 1);  -- 1 ноутбук в другом заказе
+INSERT INTO order_items VALUES (1, 1, 1, 2);  
+INSERT INTO order_items VALUES (2, 1, 2, 3);  
+INSERT INTO order_items VALUES (3, 2, 1, 1);  
 
 /*
    Scenario 1: Try to delete a category that has products (RESTRICT)
