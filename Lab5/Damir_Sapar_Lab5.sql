@@ -209,7 +209,6 @@ Task 4.3 — Comparison Exercise
  INSERT INTO employees_dept VALUES (1, 'John Doe', 1, '2024-05-10');
 INSERT INTO employees_dept VALUES (2, 'Alice Brown', 2, '2024-06-15');
 INSERT INTO employees_dept VALUES (3, 'Michael Smith', 3, '2024-07-01');
--- Нарушение внешнего ключа (FOREIGN KEY)
 -- INSERT INTO employees_dept VALUES (4, 'Sarah Green', 99, '2024-08-01');
 -- Error: The inserted dept_id = 99 does not exist in the departments table.
 
@@ -271,19 +270,15 @@ CREATE TABLE order_items(
     quantity INTEGER CHECK ( quantity>0 )
 );
 
--- Категории
 INSERT INTO categories VALUES (1, 'Electronics');
 INSERT INTO categories VALUES (2, 'Clothing');
 
--- Продукты (ссылаются на категории)
 INSERT INTO products_fk VALUES (1, 'Laptop', 1);
 INSERT INTO products_fk VALUES (2, 'T-Shirt', 2);
 
--- Заказы
 INSERT INTO orders VALUES (1, '2025-10-10');
 INSERT INTO orders VALUES (2, '2025-10-11');
 
--- Элементы заказов
 INSERT INTO order_items VALUES (1, 1, 1, 2);  
 INSERT INTO order_items VALUES (2, 1, 2, 3);  
 INSERT INTO order_items VALUES (3, 2, 1, 1);  
